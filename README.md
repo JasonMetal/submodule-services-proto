@@ -1,8 +1,5 @@
 # services-proto
 
-
-
-
 #### 介绍
 proto文件仓库
 
@@ -19,8 +16,11 @@ package services.user[user项目]
 package services.XXX[XXX项目]
 
 ```
+
 # 由proto文件生成go代码
+
 ```shell
 cd services-proto/proto/user;
 protoc --proto_path=./  --go_out=plugins=grpc:../../pb-go/user/ user.proto 
 ```
+
